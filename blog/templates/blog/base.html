@@ -1,0 +1,26 @@
+{% load staticfiles %}
+<html>
+  <head>
+    <title>Shannon's Django Blog</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="page-header">
+      <center>
+        <h1><a href="/">Yas Queen</a></h1>
+    </div>
+      </center>
+    <center><img src="http://grist.files.wordpress.com/2014/05/broad-city-dancing.gif?w=660&h=365"/></center>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
